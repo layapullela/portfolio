@@ -1,0 +1,79 @@
+body {
+  background-color: #FFCCAA;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  min-height: 70vh;
+  background-color: #FFCCAA;
+}
+
+.profile-pic {
+  width: 400px;
+  height: auto;
+  border-radius: 50%; /* makes the image rounded */
+}
+
+.buttons {
+  margin-top: 20px; /* adds some space between the image and buttons */
+}
+
+.resume-button,
+.projects-button {
+  font-size: 18px;
+  padding: 15px 30px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #a5c0f3;
+  color: rgb(14, 2, 2);
+  transition: background-color 0.2s ease;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.resume-button:hover,
+.projects-button:hover {
+  background-color: #0056b3;
+}
+
+.slow {
+  display: inline-block;
+  vertical-align: bottom;
+  max-width: 0.5rem;
+  overflow: hidden;
+  animation: slow 2s ease forwards;
+}
+
+.chat {
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  padding: 10px;
+  width: 300px;
+  margin: 20px auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+p{
+  color: rgb(11, 2, 4); 
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
