@@ -7,15 +7,16 @@ body {
 
 .home-page {
   display: flex;
+  margin: 40px;
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center items horizontally */
   justify-content: center; /* Center items vertically */
-  min-height: 70vh;
+  min-height: 100vh;
   background-color: #FFCCAA;
 }
 
 .profile-pic {
-  width: 400px;
+  width: 500px;
   height: auto;
   border-radius: 50%; /* makes the image rounded */
 }
@@ -28,14 +29,14 @@ body {
 .projects-button {
   font-size: 18px;
   padding: 15px 30px;
-  margin: 10px;
+  margin: 15px;
   cursor: pointer;
   border: none;
   border-radius: 5px;
   background-color: #a5c0f3;
   color: rgb(14, 2, 2);
   transition: background-color 0.2s ease;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .resume-button:hover,
@@ -43,37 +44,13 @@ body {
   background-color: #0056b3;
 }
 
-.slow {
-  display: inline-block;
-  vertical-align: bottom;
-  max-width: 0.5rem;
-  overflow: hidden;
-  animation: slow 2s ease forwards;
+.hidden {
+  visibility: hidden;
 }
 
-.chat {
-  font-family: Arial, sans-serif;
-  border: 1px solid #ccc;
-  background-color: #f4f4f4;
-  padding: 10px;
-  width: 300px;
-  margin: 20px auto;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-
-p{
-  color: rgb(11, 2, 4); 
+p {
+  color: rgb(11, 2, 4);
   font-family: "Courier";
-  font-size: 20px;
-  margin: 10px 0 0 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 30em;
-  animation: type 4s steps(60, end); 
+  font-size: 18px;
 }
 
-@keyframes type{ 
-  from { width: 0; } 
-} 
