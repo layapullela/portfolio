@@ -18,6 +18,7 @@
   .app-button {
     width: 200px;
     height: 200px;
+    margin-top: 20px;
     border: none;
     border-radius: 50px;
     background-color: #f1f1f1;

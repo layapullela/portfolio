@@ -2,6 +2,7 @@ import React from 'react';
 import './Projects.css';
 import AutodocLogo from '../images/autodoc_logo.png'; // Replace with the actual path to your logo image
 import ChocLogo from '../images/choclogo_color.png';
+import travelLogo from '../images/travel.png'
 import gitLogo from '../images/github.png';
 import LinkedLogo from '../images/linkedin.png';
 
@@ -13,6 +14,10 @@ const Projects = () => {
   const chocRedir = () => {
     window.location.href = "https://drive.google.com/file/d/15vSPAEr12ZTdOqwiXtQxcTrL5zaW5rod/view?usp=sharing";
   };
+
+  const travelRedir = () => {
+    window.location.href = "https://laya-travelblog-9623586bec2a.herokuapp.com";
+  }
 
   const gitRedir = () => {
     window.location.href = "https://github.com/layapullela";
@@ -38,6 +43,14 @@ const Projects = () => {
         </button>
         <div className="overlay">
           <span className="description"><strong>my research project presented at the pediatric academic societies conference in 2023.</strong></span>
+        </div>
+      </div>
+      <div className="button-wrapper">
+        <button className="app-button" onClick={travelRedir}>
+          <img src={travelLogo} alt="Logo" className="app-logo" />
+        </button>
+        <div className="overlay">
+          <span className="description"><strong>my blog traveling through the usa national parks.</strong></span>
         </div>
       </div>
       <div className="button-wrapper">
